@@ -14,3 +14,4 @@ the moment. Once they all will be implemented, we will release version 1.0.
     network.rst
     standards.rst
     entries.rst
+    tags.rst
