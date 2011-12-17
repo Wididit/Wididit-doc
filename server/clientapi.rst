@@ -79,7 +79,7 @@ Perform a get request to `/people/`
 Get a profile
 -------------
 
-Perform a request to `/people/<username>` where `<username>` is a :ref:`userid`.
+Perform a request to `/people/<username>/` where `<username>` is a :ref:`userid`.
 
 
 Entries
