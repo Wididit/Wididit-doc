@@ -79,7 +79,7 @@ Perform a get request to `/people/`
 Get a profile
 -------------
 
-Perform a request to `/people/<username>` where `<username>` is a :ref:`usermask`.
+Perform a request to `/people/<username>` where `<username>` is a :ref:`userid`.
 
 
 Entries
@@ -154,12 +154,12 @@ Perform a GET request to `/entry/`
 List a someone's entries
 ------------------------
 
-Perform a GET request to `/entry/<usermask>/`.
+Perform a GET request to `/entry/<userid>/`.
 
 Get an entry
 ------------
 
-Perform a GET request to `/entry/<usermask>/<id>/`.
+Perform a GET request to `/entry/<userid>/<id>/`.
 
 Search an entry
 ---------------
@@ -184,7 +184,7 @@ content
 
 author
 
-        The entry must have been created by the given :ref:`usermask`.
+        The entry must have been created by the given :ref:`userid`.
 
         If you supply this parameter twice (or more), it will act as a `OR`
         clause.
@@ -196,14 +196,14 @@ Create an entry
 
         You must be authenticated.
 
-Perform a POST request to `/entry/<usermask>/`. All fields but `generator`,
+Perform a POST request to `/entry/<userid>/`. All fields but `generator`,
 `title`, and `content` are optional.
 
 You cannot edit `id2`, `author`, `published` and `updated`.
 
 .. IMPORTANT::
 
-        For the moment, only posts to your own :ref:`usermask` is allowed.
+        For the moment, only posts to your own :ref:`userid` is allowed.
 
 Update an entry
 ---------------
@@ -212,7 +212,7 @@ Update an entry
 
         You must be authenticated and have write access to the entry.
 
-Perform a PUT request to `/entry/<usermask>/<id>/`. All fields are optional.
+Perform a PUT request to `/entry/<userid>/<id>/`. All fields are optional.
 
 You cannot edit `id2`, `author`, `published` and `updated`.
 
@@ -223,4 +223,4 @@ Delete an entry
 
         You must be authenticated and have write access to the entry.
 
-Perform a DELETE request to `/entry/<usermask>/<id>/`.
+Perform a DELETE request to `/entry/<userid>/<id>/`.
