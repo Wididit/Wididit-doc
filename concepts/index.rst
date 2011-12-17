@@ -13,5 +13,6 @@ the moment. Once they all will be implemented, we will release version 1.0.
     intro.rst
     network.rst
     standards.rst
+    people.rst
     entries.rst
     tags.rst
