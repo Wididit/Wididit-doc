@@ -199,6 +199,8 @@ Create an entry
 Perform a POST request to `/entry/<userid>/`. All fields but `generator`,
 `title`, and `content` are optional.
 
+`contributors` must be a list of user ids, separated by spaces.
+
 You cannot edit `id`, `author`, `published` and `updated`.
 
 .. IMPORTANT::
@@ -208,13 +210,7 @@ You cannot edit `id`, `author`, `published` and `updated`.
 Update an entry
 ---------------
 
-.. NOTE::
-
-        You must be authenticated and have write access to the entry.
-
-Perform a PUT request to `/entry/<userid>/<id>/`. All fields are optional.
-
-You cannot edit `id`, `author`, `published` and `updated`.
+Same as entry creation, but with a PUT request to `/entry/<userid>/<entryid>/`.
 
 Delete an entry
 ---------------
