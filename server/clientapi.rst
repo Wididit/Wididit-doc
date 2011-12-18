@@ -92,7 +92,7 @@ Fields
 
         This fields are inspired from the Atom specification.
 
-id2
+id
 
         The ID of this entry. It is unique against the user (and not against
         the server or the network).
@@ -199,7 +199,7 @@ Create an entry
 Perform a POST request to `/entry/<userid>/`. All fields but `generator`,
 `title`, and `content` are optional.
 
-You cannot edit `id2`, `author`, `published` and `updated`.
+You cannot edit `id`, `author`, `published` and `updated`.
 
 .. IMPORTANT::
 
@@ -214,7 +214,7 @@ Update an entry
 
 Perform a PUT request to `/entry/<userid>/<id>/`. All fields are optional.
 
-You cannot edit `id2`, `author`, `published` and `updated`.
+You cannot edit `id`, `author`, `published` and `updated`.
 
 Delete an entry
 ---------------
