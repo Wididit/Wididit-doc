@@ -151,21 +151,6 @@ List all entries
 
 Perform a GET request to `/entry/`
 
-List a someone's entries
-------------------------
-
-Perform a GET request to `/entry/<userid>/`.
-
-Get an entry
-------------
-
-Perform a GET request to `/entry/<userid>/<id>/`.
-
-Search an entry
----------------
-
-Perform a GET request to `/search/entry/`.
-
 You can supply filters to the search, as GET parameters:
 
 tag
@@ -187,7 +172,12 @@ author
         The entry must have been created by the given :ref:`userid`.
 
         If you supply this parameter twice (or more), it will act as a `OR`
-        clause.
+        clause (because a single entry cannot have multiple authors).
+
+Get an entry
+------------
+
+Perform a GET request to `/entry/<userid>/<id>/`.
 
 Create an entry
 ---------------
@@ -196,16 +186,12 @@ Create an entry
 
         You must be authenticated.
 
-Perform a POST request to `/entry/<userid>/`. All fields but `generator`,
+Perform a POST request to `/entry/`. All fields but `generator`,
 `title`, and `content` are optional.
 
 `contributors` must be a list of user ids, separated by spaces.
 
 You cannot edit `id`, `author`, `published` and `updated`.
-
-.. IMPORTANT::
-
-        For the moment, only posts to your own :ref:`userid` is allowed.
 
 Update an entry
 ---------------
@@ -219,4 +205,4 @@ Delete an entry
 
         You must be authenticated and have write access to the entry.
 
-Perform a DELETE request to `/entry/<userid>/<id>/`.
+Perform a DELETE request to `/entry/<userid>/<entryid>/`.
