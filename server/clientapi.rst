@@ -146,6 +146,16 @@ updated
 
         Last update date.
 
+.. NOTE::
+
+        This field is inspired from the Atom Threading Extensions specification.
+
+in_reply_to
+
+        If this entry is a reply, this field is the original entry.
+
+
+
 List all entries
 ----------------
 
@@ -173,6 +183,14 @@ author
 
         If you supply this parameter twice (or more), it will act as a `OR`
         clause (because a single entry cannot have multiple authors).
+
+in_reply_to
+
+        Must be in the format `<userid>/<entryid>`.
+
+        All entries must be a reply to the specified entry.
+
+        You cannot supply this parameter twice.
 
 Get an entry
 ------------
