@@ -163,34 +163,38 @@ Perform a GET request to `/entry/`
 
 You can supply filters to the search, as GET parameters:
 
-tag
+tag=<data>
 
         All entries must be tagged with this tag.
 
         If you supply this parameter twice (or more), it will act as a `AND`
         clause.
 
-content
+content=<data>
 
-        All entries must contain this exact string.
+        All entries must contain the exact string.
 
         If you supply this parameter twice (or more), it will act as a `AND`
         clause.
 
-author
+author=<data>
 
         The entry must have been created by the given :ref:`userid`.
 
         If you supply this parameter twice (or more), it will act as a `OR`
         clause (because a single entry cannot have multiple authors).
 
-in_reply_to
+in_reply_to=<data>
 
         Must be in the format `<userid>/<entryid>`.
 
         All entries must be a reply to the specified entry.
 
         You cannot supply this parameter twice.
+
+noshare
+
+        Strips all shared entries.
 
 Get an entry
 ------------
