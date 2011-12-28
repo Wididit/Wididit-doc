@@ -88,6 +88,10 @@ Entries
 Fields
 ------
 
+shared_by
+
+        A list of user which shared this entry.
+
 .. NOTE::
 
         This fields are inspired from the Atom specification.
@@ -134,7 +138,7 @@ subtitle
 
         A subtitle for the entry.
 
-summry
+summary
 
         A summary.
 
@@ -192,9 +196,13 @@ in_reply_to=<data>
 
         You cannot supply this parameter twice.
 
-noshare
+share
 
-        Strips all shared entries.
+        Includes shared entries.
+
+nonative
+
+        Strips entries that have not been shared.
 
 Get an entry
 ------------
