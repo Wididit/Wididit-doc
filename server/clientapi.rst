@@ -57,8 +57,8 @@ To get a list of all servers in the server's :ref:`concepts-network`, perform
 a GET request to `/server/`.
 
 
-Peoples
-=======
+People
+======
 
 Fields
 ------
@@ -70,6 +70,10 @@ username
 server
 
         The server on which this people is registered.
+
+biography
+
+        An autobiography written by the user owning this account.
 
 List
 ----
