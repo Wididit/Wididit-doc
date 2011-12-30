@@ -243,4 +243,4 @@ texinfo_documents = [
 
 # -- Autodoc configuration -----------------------------------------------------
 autodoc_member_order = 'bysource'
-autodoc_default_flags = ['members', 'inherited-members']
+autodoc_default_flags = ['members', 'inherited-members', 'undoc-members']
