@@ -240,3 +240,7 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+# -- Autodoc configuration -----------------------------------------------------
+autodoc_member_order = 'bysource'
+autodoc_default_flags = ['members', 'inherited-members']
