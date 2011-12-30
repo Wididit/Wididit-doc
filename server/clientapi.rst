@@ -136,7 +136,7 @@ rights
 
 source
 
-        If the entry is a repeated message, the source is the original one.
+        Unused.
 
 subtitle
 
